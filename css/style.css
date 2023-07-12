@@ -65,7 +65,7 @@ img {
     height: 15rem;
   }
   .c-exp-gallery__slider {
-    width: 20vw;
+    width: vw;
   }
   .c-exp-gallery-slide__img {
     width: 10.5rem;
@@ -78,7 +78,7 @@ img {
     height: 12rem;
   }
   .c-exp-gallery__slider {
-    width: 80vw;
+    width: 100vw;
   }
   .c-exp-gallery-slide__img {
     width: 9.5rem;
