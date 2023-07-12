@@ -102,7 +102,6 @@ nav a:after {
   display: block;
   content: "";
   border-bottom: solid 2px var(--first-color);
-  /* hover일 때 밑줄 생기도록 */
   transform: scaleX(0);
   transition: transform 250ms ease-in-out;
 }
