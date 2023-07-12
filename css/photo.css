@@ -70,24 +70,24 @@ img {
     font-weight: 500;
     font-size: 1rem;
 }
-
-
-h2 {
+h2{
+    padding-top: 2rem;
     text-align: center;
-    margin-top: 7rem;
-    font-style: normal;
-    font-weight: 600;
-    font-family: 'Gothic A1', sans-serif;
 }
+
 h5{
+    padding-top: 5rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    font-family: 'Gothic A1', sans-serif;
     text-align: center;
     font-style: normal;
-    font-size: 0.8rem;
+    font-weight: bold;
+    font-size: 1rem;
 }
 h6{
+    padding-top: 10px;
     font-family: 'Gothic A1', sans-serif;
-    text-align: center;
-    font-style: normal;
     font-size: 0.5rem;
 }
 .sub-title{
