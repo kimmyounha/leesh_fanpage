@@ -40,7 +40,6 @@
         <nav class="nav_container">
           <li class="nav-item"><a href="index.html">home</a></li>
           <li class="nav-item"><a href="ssulply.html">ssulply</a></li>
-          
           <li class="nav-item"><a href="index.html#main">PhotoAlbum</a></li>
           <li class="nav-item"><a href="10reasons.html">10reasons</a></li>
         </nav>
@@ -51,6 +50,29 @@
     </button>
   </header>
 
+  <div class="letter-close">
+    <div class="envelope" onclick="open_letter()"></div>
+    <!-- url을 넣어 편지 봉투를 홈페이지에 나타나게 하기 위해 envelope 클래스를 만들어준다. -->
+    <h2 class="envelope-msg">봉투를 열어주세요!</h2>
+    <!-- 봉투 아래에 택스트를 넣기 위해 envelope-msg 클래스를 만들었고 위에서 불러와 수정. -->
+</div>
+
+<div class="letter-open">
+    <div class="messgebox"><h5>
+        
+    </div>
+</div>
+
+  <script>
+
+    function open_letter() {
+        document.getElementsByClassName("letter-close")[0].style.display = 'none'
+        document.getElementsByClassName("letter-open")[0].style.display = 'block'
+    }
+
+
+</script>
+  <script src="js/main.js"> </script>
   <script src="js/custom.js"></script>
 </body>
 

@@ -1,0 +1,121 @@
+body{
+    text-align: center;
+}
+body {
+    background-color:	#E2E2E2;
+    /* 홈페이지 배경 컬러를 빨간색으로 지정하는 코드 */
+}
+
+.envelope {
+    /* 아래 클래스 지정한걸 불러와 꾸며준다. */
+
+    width: 200px;
+    height: 200px;
+    /* 불러온 사진의 크기를 정하는 코드 */
+
+    background-image: url(https://pngimg.com/uploads/envelope/envelope_PNG18366.png);
+    background-size: cover;
+    background-position: center;
+    /* 이미지를 불러오고 화면에 나타나는 이미지 중앙을 맞춰주는 코드
+    사진을 홈페이지 중앙에 맞추는 코드가 아니라 사진이 짤려서 나오는데
+    해당 사진이 전체적으로 다 나오도록 만들어 주는 코드이다. */
+
+    margin: 200px auto 0px auto;
+    /* 봉투를 중앙으로 가져오기 위한 코드
+    이 설정으로 좌측 상단에 위치한 봉투 사진을 중앙으로 데려왔다. */
+
+    cursor: pointer;
+    /* 마우스를 가져다 대면 마우스 포인터가 손 모양으로 바뀐다. */
+}
+
+.envelope-msg {
+    /* 아래서 envelope-msg클래스를 만들었으니 여기서 불러와서 수정한다.  */
+    color: black;
+}
+
+.letter-close {
+    display: block;
+}
+
+/* html 코드를 안 보이도록 설정해 주는 코딩 아래서 letter-close 클래스를 만들어
+위에 코딩한 기록 전체를 넣었다. 한 마디로, lerrer-close 클래스에 속하는 코딩을 감춰
+주는 기능. */
+
+.letter-open {
+    padding-top: 10rem;
+    display: none;
+}
+
+.messgebox {
+    background-color: rgb(254, 254, 249);
+    width: 400px;
+    margin: auto;
+    color: rgb(89, 112, 126);
+
+    padding: 30px;
+    /* 안쪽으로의 여백 */
+    font-size: 20px;
+    /* 폰트 사이즈 변경하는 코드 */
+    line-height: 30px;
+    box-shadow: 0px 0px 10px 0px white;
+
+}
+
+h2 {
+
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: 'Gothic A1', sans-serif;
+}
+h5{
+
+    text-align: center;
+    font-style: normal;
+    font-size: 0.8rem;
+}
+h6{
+
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.from {
+    text-align: right;
+    /* from 클래스를 우측 정렬으로 만드는 코딩 */
+    margin-bottom: 0px;
+    /* 아래 공간을 줄여주는 코딩.글자 아래 공간이 길쭉하게 생기는걸 줄여준다. */
+
+}
+
+@media screen and (max-width: 760px){
+
+    /* 모바일 처리하는 코딩 */
+    .messgebox {
+        width: 300px;
+
+        padding: 20px;
+    }
+
+    /* 위에 설정은 max-width: 760px아래일 때만 실행해라.
+    넓이가 760이면 패드나 폰 종류에서만 실행되고 노트북 같이 길이가 넓게
+    출력이 되는 화면에서는 실행이 되지 않는다. */
+    .rtan {
+
+        width: 150px;
+        height: 150px;
+        margin: 70px auto 0px auto;
+
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .envelope {
+
+        margin: 150px auto 0px auto;
+
+    }
+}

@@ -1,4 +1,5 @@
 body{
+  text-align: center;
     background: rgb(244, 250, 255);
     background: linear-gradient(180deg, hwb(300 96% 0%) 0%, #f2e2057b 100%);
     box-sizing: border-box;
