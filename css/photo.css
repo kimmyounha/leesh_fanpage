@@ -1,0 +1,146 @@
+body{
+    box-sizing: border-box;
+}
+:root {
+    --color-white: #FDFDFD;
+    --color-black: #181818;
+    --color-navy: #00255E;
+    --color-background-white: rgba(255, 255, 255, 0.9);
+
+    --font-d-basic: 1rem;
+    --font-d-large: 2rem;
+    --font-t-large: 1.6rem;
+    --font-t-basic: 0.8rem;
+    --font-basic: 'Pretendard-Regular';
+}
+
+.post-section {
+    width: 60vw;
+    box-sizing: border-box;
+    margin-top: 3rem;
+}
+
+#go-upload {
+    width: 24%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: solid 1px var(--color-white);
+}
+
+#go-upload span {
+    margin-right: 12px;
+    color: var(--color-white);
+    font-family: var(--font-basic);
+    font-weight: 300;
+    font-size: var(--font-d-basic);
+}
+
+#go-upload i {
+    color: var(--color-white);
+}
+
+.post {
+    width: 31%;
+    box-sizing: border-box;
+
+    margin: 0 1% 1% 1%;
+
+    display: inline-block;
+
+    background-color: var(--color-white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 14px;
+
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    height: 90%;
+    object-fit: fill;
+}
+
+.title {
+    margin-top: 20px;
+    font-family: var(--font-basic);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+}
+h2{
+    padding-top: 2rem;
+    text-align: center;
+}
+
+h5{
+    padding-top: 5rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    font-family: 'Gothic A1', sans-serif;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+}
+h6{
+    padding-top: 10px;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 10px;
+}
+.sub-title{
+    font-size: 1rem;
+}
+@media (min-width: 768px) { /* 미디어 쿼리를 사용하여 768px 이상일 때는 데스크탑으로 간주합니다. */
+    .desktop-img {
+      display: block; /* 데스크탑에서 이미지를 보이게 합니다. */
+    }
+    .mobile-img {
+      display: none; /* 모바일에서 이미지를 숨깁니다. */
+    }
+  }
+  @media (max-width: 767px) { /* 미디어 쿼리를 사용하여 767px 이하일 때는 모바일로 간주합니다. */
+    .desktop-img {
+      display: none; /* 데스크탑에서 이미지를 숨깁니다. */
+    }
+    .mobile-img {
+      display: block; /* 모바일에서 이미지를 보이게 합니다. */
+    }
+  }
+@media screen and (max-width: 1024px) {
+
+    article,
+    .post-section {
+        width: 80vw;
+    }
+
+    .post {
+        width: 45%;
+    }
+    
+    .title {
+        font-size: var(--font-t-basic);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    article,
+    .post-section {
+        width: 80vw;
+    }
+
+    .post {
+        width: 36vw;
+    }
+    
+    .title {
+        font-size: 0.6rem;
+    }
+
+    #go-upload {
+        min-width: 120px;
+    }
+}
