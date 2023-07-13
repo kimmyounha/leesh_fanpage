@@ -31,10 +31,6 @@ li {
 	display: inline-block;
 	margin-left: 10px;
 	user-select: none;
-
-	width : 50%;
-	height : 160px;
-
 	font-size: 33px;
 	font-weight: bold;
 	line-height: 130px;
